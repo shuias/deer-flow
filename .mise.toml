@@ -1,0 +1,12 @@
+# DeerFlow toolchain (https://mise.jxx.dev)
+# 版本依据: scripts/check.py (Node 22+), backend/pyproject.toml (Python >=3.12),
+# frontend/package.json -> "packageManager": "pnpm@10.26.2"
+[tools]
+node = "22"
+python = "3.12"
+pnpm = "10.26.2"
+uv = "latest"
+
+# cd 进本目录自动激活 (需先 mise trust)
+[env]
+_.file = ".env"
